@@ -1,0 +1,12 @@
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\bin\Debug\net6.0\Comprehensive.Utilities.deps.json
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\bin\Debug\net6.0\Comprehensive.Utilities.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\bin\Debug\net6.0\Comprehensive.Utilities.pdb
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\obj\Debug\net6.0\Comprehensive.Utilities.csproj.AssemblyReference.cache
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\obj\Debug\net6.0\Comprehensive.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\obj\Debug\net6.0\Comprehensive.Utilities.AssemblyInfoInputs.cache
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\obj\Debug\net6.0\Comprehensive.Utilities.AssemblyInfo.cs
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\obj\Debug\net6.0\Comprehensive.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\obj\Debug\net6.0\Comprehensive.Utilities.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\obj\Debug\net6.0\refint\Comprehensive.Utilities.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\obj\Debug\net6.0\Comprehensive.Utilities.pdb
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Utilities\obj\Debug\net6.0\ref\Comprehensive.Utilities.dll

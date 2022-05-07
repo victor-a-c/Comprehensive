@@ -4,16 +4,14 @@ option csharp_namespace = "Comprehensive.gRPC";
 
 package Events;
 
-// The greeting service definition.
 service EventsS {
-  // Sends a greeting
-  rpc CreateEvent (CreateEventoRequest) returns (CreateEventReply);
-  rpc GetEvent (GetEventRequest) returns (GetEventReply);
+  rpc CreateEvent (CreateEventRequest) returns (CreateEventReply);
+  rpc GetEvent (GetEventRequest) returns (EventsModel);
 }
 
 // Models
 
-message EventModel
+message EventsModel
 {
 	int64 eventId = 1;
 	string eventName = 2;
@@ -26,12 +24,16 @@ message EventModel
 
 // requests / replies
 
+message GetEventRequest
+{
+	string eventId = 1;
+}
 
-message EventRequest {
+message CreateEventRequest {
   string eventId = 1;
 }
 
 
-message EventReply {
+message CreateEventReply {
   string eventId = 1;
 }

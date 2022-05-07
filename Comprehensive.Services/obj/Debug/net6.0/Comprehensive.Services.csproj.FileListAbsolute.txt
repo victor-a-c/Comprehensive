@@ -1,0 +1,12 @@
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Services.deps.json
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Services.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Services.pdb
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\Comprehensive.Services.csproj.AssemblyReference.cache
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\Comprehensive.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\Comprehensive.Services.AssemblyInfoInputs.cache
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\Comprehensive.Services.AssemblyInfo.cs
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\Comprehensive.Services.csproj.CoreCompileInputs.cache
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\Comprehensive.Services.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\refint\Comprehensive.Services.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\Comprehensive.Services.pdb
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\ref\Comprehensive.Services.dll
