@@ -1,6 +1,37 @@
-﻿namespace Comprehensive.gRPC.Protos
+﻿syntax = "proto3";
+
+option csharp_namespace = "Comprehensive.gRPC";
+
+package Events;
+
+// The greeting service definition.
+service EventsS {
+  // Sends a greeting
+  rpc CreateEvent (CreateEventoRequest) returns (CreateEventReply);
+  rpc GetEvent (GetEventRequest) returns (GetEventReply);
+}
+
+// Models
+
+message EventModel
 {
-    public class events
-    {
-    }
+	int64 eventId = 1;
+	string eventName = 2;
+	string eventDate = 3;
+	string eventAddress = 4;
+	bool isValid = 5;
+}
+
+
+
+// requests / replies
+
+
+message EventRequest {
+  string eventId = 1;
+}
+
+
+message EventReply {
+  string eventId = 1;
 }

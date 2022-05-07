@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Comprehensive.Logs
 {
-    internal class EventsLogService
+    internal class EventsLogService : IEventsLogService
     {
     }
 }
