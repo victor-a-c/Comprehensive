@@ -1,0 +1,6 @@
+﻿namespace Comprehensive.gRPC.Protos
+{
+    public class events
+    {
+    }
+}
