@@ -77,5 +77,51 @@ namespace Comprehensive.Repository.Repositories
             return model;
         }
 
+        public async Task<EventsModel> UpdateAsync(EventsModel model)
+        {
+            var result = new EventsModel();
+            result.EventId = model.EventId;
+            result.EventName = model.EventName;
+            result.EventDate = model.EventDate;
+            result.EventAddress = model.EventAddress;
+            result.IsValid = model.IsValid;
+
+            var error = true;
+            var message = ReturnTypeRegistryEnum.None.GetDescription();
+
+            try
+            {
+                _db.Entry(result).State = EntityState.Added;
+
+                try
+                {
+                    long i = await _db.SaveChangesAsync();
+                    if (i == 1)
+                    {
+                        message = ReturnTypeRegistryEnum.AlteredSuccessfully.GetDescription();
+                        error = false;
+                    }
+                    else
+                    {
+                        message = ReturnTypeRegistryEnum.NotAltered.GetDescription();
+                    }
+                }
+                catch (Exception e)
+                {
+                    message = ReturnTypeRegistryEnum.ExceptionAlter.GetDescription();
+                    model.Exception = e;
+                }
+            }
+            catch (Exception e)
+            {
+                model.Message = ReturnTypeRegistryEnum.ExceptionAlterChange.GetDescription();
+                model.Exception = e;
+            }
+
+            model.Error = error;
+            model.Message = message;
+            return model;
+        }
+
     }
 }
