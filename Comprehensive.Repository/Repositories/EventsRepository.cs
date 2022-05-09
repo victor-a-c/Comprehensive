@@ -21,11 +21,6 @@ namespace Comprehensive.Repository.Repositories
             _db = db;
         }
 
-        //public async Task<List<EventsModel>> GetAllById(long eventId)
-        //{
-        //    return await _db.EventsModel.SingleAsync(x => x.EventId == eventId);
-        //}
-
         public async Task<List<EventsModel>> GetAllAsync()
         {
             return await _db.EventsModel.ToListAsync();
@@ -121,6 +116,40 @@ namespace Comprehensive.Repository.Repositories
             model.Error = error;
             model.Message = message;
             return model;
+        }
+
+        public async Task<EventsModel> DeleteByIdAsync(long id)
+        {
+            var result = await _db.EventsModel.Include(c => c.EventId).SingleAsync(x => x.EventId == id);
+            var error = true;
+            var message = ReturnTypeRegistryEnum.None.GetDescription();
+
+            if (result != null)
+            {
+                _db.Entry(result).State = EntityState.Deleted;
+                _db.EventsModel.Remove(result);
+            }
+
+            try
+            {
+                if (await _db.SaveChangesAsync() > 0)
+                {
+                    message = ReturnTypeRegistryEnum.AlteredSuccessfully.GetDescription();
+                    error = false;
+                }
+                else
+                {
+                    message = ReturnTypeRegistryEnum.NotAltered.GetDescription();
+                }
+            }
+            catch (Exception e)
+            {
+                result.Exception = e;
+            }
+
+            result.Error = error;
+            result.Message = message;
+            return result;
         }
 
     }
