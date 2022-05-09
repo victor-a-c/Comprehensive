@@ -26,6 +26,21 @@ namespace Comprehensive.Repository.Repositories
             return await _db.EventsModel.ToListAsync();
         }
 
+        public async Task<List<EventsModel>> GetAllByDateAsync(DateTime date)
+        {
+            return await _db.EventsModel.Where(x => x.EventDate == date).ToListAsync();
+        }
+
+        public async Task<List<EventsModel>> GetAllByValidity(bool binary)
+        {
+            return await _db.EventsModel.Where(x => x.IsValid == binary).ToListAsync();
+        }
+
+        public async Task<EventsModel> GetByIdAsync(long id)
+        {
+            return await _db.EventsModel.SingleAsync(x => x.EventId == id);
+        }
+
         public async Task<EventsModel> CreateAsync(EventsModel model)
         {
             var result = new EventsModel();
