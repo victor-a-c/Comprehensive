@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Comprehensive.Repository.UnitOfWork
 {
-    internal class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
+
     }
 }

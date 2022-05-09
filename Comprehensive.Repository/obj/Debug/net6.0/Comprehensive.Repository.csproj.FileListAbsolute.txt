@@ -10,3 +10,8 @@ C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Repository\obj\Debug
 C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Repository\obj\Debug\net6.0\refint\Comprehensive.Repository.dll
 C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Repository\obj\Debug\net6.0\Comprehensive.Repository.pdb
 C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Repository\obj\Debug\net6.0\ref\Comprehensive.Repository.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Repository\bin\Debug\net6.0\Comprehensive.Entities.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Repository\bin\Debug\net6.0\Comprehensive.Entities.pdb
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Repository\obj\Debug\net6.0\Comprehensive.Repository.csproj.CopyComplete
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Repository\bin\Debug\net6.0\Comprehensive.Utilities.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Repository\bin\Debug\net6.0\Comprehensive.Utilities.pdb

@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Comprehensive.Entities.Entities
 {
-    public class EventsModel
+    public class EventsModel : BaseModel
     {
         [Column("EventId")]
-        public int EventId { get; set; }
+        public long EventId { get; set; }
 
         [Column("EventName")]
         public string? EventName { get; set; }
