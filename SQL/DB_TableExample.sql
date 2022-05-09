@@ -2,15 +2,17 @@
 DROP TABLE IF EXISTS EVENTS
 
 CREATE TABLE EVENTS(
-eventId INT PRIMARY KEY NOT NULL,
-eventName VARCHAR(50),
-eventDate DATETIME,
-eventAddress VARCHAR(200),
-isValid BIT
+EventId INT PRIMARY KEY NOT NULL,
+EventName VARCHAR(50),
+Date DATETIME,
+State VARCHAR(50),
+City VARCHAR(80),
+Address VARCHAR(200),
+IsValid BIT
 );
 
-INSERT INTO EVENTS (eventId, eventName, eventDate, eventAddress, isValid)
-VALUES (0001, 'test event', '20220615', 'Test Address', 1);
+INSERT INTO EVENTS (EventId, EventName, Date, State, City, Address, IsValid)
+VALUES (0001, 'test event', '20220615', 'State', 'City', 'Test Address', 1);
 
 
 SELECT * FROM EVENTS;
