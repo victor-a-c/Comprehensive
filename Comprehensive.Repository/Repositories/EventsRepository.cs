@@ -1,6 +1,5 @@
 ﻿using Comprehensive.Entities.Entities;
 using Comprehensive.Repository.Context;
-using Comprehensive.Repository.Interfaces;
 using Comprehensive.Utilities.Enum;
 using Comprehensive.Utilities.Helper;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Comprehensive.Repository.Repositories
 {
-    internal class EventsRepository : IEventsRepository
+    public class EventsRepository
     {
         private readonly ApplicationDbContext _db;
         public EventsRepository(ApplicationDbContext db)
@@ -28,7 +27,7 @@ namespace Comprehensive.Repository.Repositories
 
         public async Task<List<EventsModel>> GetAllByDateAsync(DateTime date)
         {
-            return await _db.EventsModel.Where(x => x.EventDate == date).ToListAsync();
+            return await _db.EventsModel.Where(x => x.Date == date).ToListAsync();
         }
 
         public async Task<List<EventsModel>> GetAllByValidity(bool binary)
@@ -46,8 +45,10 @@ namespace Comprehensive.Repository.Repositories
             var result = new EventsModel();
             result.EventId = model.EventId;
             result.EventName = model.EventName;
-            result.EventDate = model.EventDate;
-            result.EventAddress = model.EventAddress;
+            result.Date = model.Date;
+            result.State = model.State;
+            result.City = model.City;
+            result.Address = model.Address;
             result.IsValid = model.IsValid;
 
             var error = true;
@@ -92,8 +93,10 @@ namespace Comprehensive.Repository.Repositories
             var result = new EventsModel();
             result.EventId = model.EventId;
             result.EventName = model.EventName;
-            result.EventDate = model.EventDate;
-            result.EventAddress = model.EventAddress;
+            result.Date = model.Date;
+            result.State = model.State;
+            result.City = model.City;
+            result.Address = model.Address;
             result.IsValid = model.IsValid;
 
             var error = true;

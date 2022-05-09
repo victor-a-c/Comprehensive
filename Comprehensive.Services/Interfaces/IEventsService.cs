@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Comprehensive.Repository.Interfaces
+namespace Comprehensive.Services.Interfaces
 {
-    internal interface IEventsRepository
+    public interface IEventsService
     {
+
     }
 }

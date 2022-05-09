@@ -16,10 +16,16 @@ namespace Comprehensive.Entities.Entities
         public string? EventName { get; set; }
 
         [Column("EventDate")]
-        public DateTime EventDate { get; set; }
+        public DateTime Date { get; set; }
+
+        [Column("City")]
+        public string City { get; set; }
+
+        [Column("State")]
+        public string State { get; set; }
 
         [Column("EventAddress")]
-        public string? EventAddress { get; set; }
+        public string? Address { get; set; }
 
         [Column("IsValid")]
         public bool? IsValid { get; set; }
