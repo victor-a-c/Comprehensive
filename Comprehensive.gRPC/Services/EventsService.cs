@@ -15,5 +15,20 @@ namespace Comprehensive.gRPC.Services
         {
             return null;
         }
+
+        public override Task<EventsModel> CreateEvent(CreateEventRequest request, ServerCallContext context)
+        {
+            return base.CreateEvent(request, context);
+        }
+
+        public override Task<DeleteEventReply> DeleteEvent(DeleteEventRequest request, ServerCallContext context)
+        {
+            return null;
+        }
+
+        public override Task<EventsModel> UpdateEvent(UpdateEventRequest request, ServerCallContext context)
+        {
+            return null;
+        }
     }
 }

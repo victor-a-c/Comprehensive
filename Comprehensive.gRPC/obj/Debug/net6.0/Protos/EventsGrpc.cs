@@ -48,19 +48,23 @@ namespace Comprehensive.gRPC {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Comprehensive.gRPC.CreateEventRequest> __Marshaller_Events_CreateEventRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Comprehensive.gRPC.CreateEventRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Comprehensive.gRPC.CreateEventReply> __Marshaller_Events_CreateEventReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Comprehensive.gRPC.CreateEventReply.Parser));
+    static readonly grpc::Marshaller<global::Comprehensive.gRPC.EventsModel> __Marshaller_Events_EventsModel = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Comprehensive.gRPC.EventsModel.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Comprehensive.gRPC.GetEventRequest> __Marshaller_Events_GetEventRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Comprehensive.gRPC.GetEventRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Comprehensive.gRPC.EventsModel> __Marshaller_Events_EventsModel = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Comprehensive.gRPC.EventsModel.Parser));
+    static readonly grpc::Marshaller<global::Comprehensive.gRPC.DeleteEventRequest> __Marshaller_Events_DeleteEventRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Comprehensive.gRPC.DeleteEventRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Comprehensive.gRPC.DeleteEventReply> __Marshaller_Events_DeleteEventReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Comprehensive.gRPC.DeleteEventReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Comprehensive.gRPC.UpdateEventRequest> __Marshaller_Events_UpdateEventRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Comprehensive.gRPC.UpdateEventRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Comprehensive.gRPC.CreateEventRequest, global::Comprehensive.gRPC.CreateEventReply> __Method_CreateEvent = new grpc::Method<global::Comprehensive.gRPC.CreateEventRequest, global::Comprehensive.gRPC.CreateEventReply>(
+    static readonly grpc::Method<global::Comprehensive.gRPC.CreateEventRequest, global::Comprehensive.gRPC.EventsModel> __Method_CreateEvent = new grpc::Method<global::Comprehensive.gRPC.CreateEventRequest, global::Comprehensive.gRPC.EventsModel>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateEvent",
         __Marshaller_Events_CreateEventRequest,
-        __Marshaller_Events_CreateEventReply);
+        __Marshaller_Events_EventsModel);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Comprehensive.gRPC.GetEventRequest, global::Comprehensive.gRPC.EventsModel> __Method_GetEvent = new grpc::Method<global::Comprehensive.gRPC.GetEventRequest, global::Comprehensive.gRPC.EventsModel>(
@@ -68,6 +72,22 @@ namespace Comprehensive.gRPC {
         __ServiceName,
         "GetEvent",
         __Marshaller_Events_GetEventRequest,
+        __Marshaller_Events_EventsModel);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Comprehensive.gRPC.DeleteEventRequest, global::Comprehensive.gRPC.DeleteEventReply> __Method_DeleteEvent = new grpc::Method<global::Comprehensive.gRPC.DeleteEventRequest, global::Comprehensive.gRPC.DeleteEventReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteEvent",
+        __Marshaller_Events_DeleteEventRequest,
+        __Marshaller_Events_DeleteEventReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Comprehensive.gRPC.UpdateEventRequest, global::Comprehensive.gRPC.EventsModel> __Method_UpdateEvent = new grpc::Method<global::Comprehensive.gRPC.UpdateEventRequest, global::Comprehensive.gRPC.EventsModel>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateEvent",
+        __Marshaller_Events_UpdateEventRequest,
         __Marshaller_Events_EventsModel);
 
     /// <summary>Service descriptor</summary>
@@ -81,13 +101,25 @@ namespace Comprehensive.gRPC {
     public abstract partial class EventsSBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Comprehensive.gRPC.CreateEventReply> CreateEvent(global::Comprehensive.gRPC.CreateEventRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Comprehensive.gRPC.EventsModel> CreateEvent(global::Comprehensive.gRPC.CreateEventRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Comprehensive.gRPC.EventsModel> GetEvent(global::Comprehensive.gRPC.GetEventRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Comprehensive.gRPC.DeleteEventReply> DeleteEvent(global::Comprehensive.gRPC.DeleteEventRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Comprehensive.gRPC.EventsModel> UpdateEvent(global::Comprehensive.gRPC.UpdateEventRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -101,7 +133,9 @@ namespace Comprehensive.gRPC {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_CreateEvent, serviceImpl.CreateEvent)
-          .AddMethod(__Method_GetEvent, serviceImpl.GetEvent).Build();
+          .AddMethod(__Method_GetEvent, serviceImpl.GetEvent)
+          .AddMethod(__Method_DeleteEvent, serviceImpl.DeleteEvent)
+          .AddMethod(__Method_UpdateEvent, serviceImpl.UpdateEvent).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -111,8 +145,10 @@ namespace Comprehensive.gRPC {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, EventsSBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_CreateEvent, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Comprehensive.gRPC.CreateEventRequest, global::Comprehensive.gRPC.CreateEventReply>(serviceImpl.CreateEvent));
+      serviceBinder.AddMethod(__Method_CreateEvent, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Comprehensive.gRPC.CreateEventRequest, global::Comprehensive.gRPC.EventsModel>(serviceImpl.CreateEvent));
       serviceBinder.AddMethod(__Method_GetEvent, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Comprehensive.gRPC.GetEventRequest, global::Comprehensive.gRPC.EventsModel>(serviceImpl.GetEvent));
+      serviceBinder.AddMethod(__Method_DeleteEvent, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Comprehensive.gRPC.DeleteEventRequest, global::Comprehensive.gRPC.DeleteEventReply>(serviceImpl.DeleteEvent));
+      serviceBinder.AddMethod(__Method_UpdateEvent, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Comprehensive.gRPC.UpdateEventRequest, global::Comprehensive.gRPC.EventsModel>(serviceImpl.UpdateEvent));
     }
 
   }

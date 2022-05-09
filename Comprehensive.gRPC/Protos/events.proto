@@ -5,8 +5,10 @@ option csharp_namespace = "Comprehensive.gRPC";
 package Events;
 
 service EventsS {
-  rpc CreateEvent (CreateEventRequest) returns (CreateEventReply);
+  rpc CreateEvent (CreateEventRequest) returns (EventsModel);
   rpc GetEvent (GetEventRequest) returns (EventsModel);
+  rpc DeleteEvent (DeleteEventRequest) returns (DeleteEventReply);
+  rpc UpdateEvent (UpdateEventRequest) returns (EventsModel);
 }
 
 // Models
@@ -20,20 +22,33 @@ message EventsModel
 	bool isValid = 5;
 }
 
-
-
 // requests / replies
 
 message GetEventRequest
 {
-	string eventId = 1;
+	int64 eventId = 1;
 }
 
 message CreateEventRequest {
-  string eventId = 1;
+  int64 eventId = 1;
 }
 
 
 message CreateEventReply {
-  string eventId = 1;
+  int64 eventId = 1;
+}
+
+message DeleteEventRequest
+{
+	int64 eventId = 1;
+}
+
+message DeleteEventReply
+{
+	bool success = 1;
+}
+
+message UpdateEventRequest
+{
+	int64 eventId = 1;
 }
