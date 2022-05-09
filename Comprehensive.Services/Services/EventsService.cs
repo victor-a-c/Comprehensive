@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Comprehensive.Services.Services
 {
-    internal class Services
+    internal class EventsService
     {
     }
 }
