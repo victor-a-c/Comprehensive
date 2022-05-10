@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Comprehensive.Entities.Entities
 {
-    public class BaseModel
+    public class BaseM
     {
         [NotMapped]
         public bool Error { get; set; }
