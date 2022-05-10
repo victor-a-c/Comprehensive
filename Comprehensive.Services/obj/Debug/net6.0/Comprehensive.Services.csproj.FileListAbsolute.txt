@@ -10,3 +10,12 @@ C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\n
 C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\refint\Comprehensive.Services.dll
 C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\Comprehensive.Services.pdb
 C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\ref\Comprehensive.Services.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Entities.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Logs.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Repository.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Utilities.dll
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Logs.pdb
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Repository.pdb
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Entities.pdb
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\bin\Debug\net6.0\Comprehensive.Utilities.pdb
+C:\Users\vitor\Documents\GitHub\Comprehensive\Comprehensive.Services\obj\Debug\net6.0\Comprehensive.Services.csproj.CopyComplete

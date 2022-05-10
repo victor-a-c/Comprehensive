@@ -30,7 +30,7 @@ namespace Comprehensive.Repository.Repositories
             return await _db.EventsModel.Where(x => x.Date == date).ToListAsync();
         }
 
-        public async Task<List<EventsM>> GetAllByValidity(bool binary)
+        public async Task<List<EventsM>> GetAllByValidityAsync(bool binary)
         {
             return await _db.EventsModel.Where(x => x.IsValid == binary).ToListAsync();
         }

@@ -43,11 +43,11 @@ namespace Comprehensive.Services.Services
             }
         }
 
-        public async Task<EventsM> DeleteByIdAsync(EventsM param)
+        public async Task<EventsM> DeleteByIdAsync(long id)
         {
             try
             {
-                return await _iUnitOfWork.EventsRepository.DeleteByIdAsync(param.EventId);
+                return await _iUnitOfWork.EventsRepository.DeleteByIdAsync(id);
             }
             catch(Exception e)
             {
@@ -71,7 +71,7 @@ namespace Comprehensive.Services.Services
         {
             try
             {
-                return await _iUnitOfWork.EventsRepository.GetAllByValidity(binary);
+                return await _iUnitOfWork.EventsRepository.GetAllByValidityAsync(binary);
             }
             catch(Exception e)
             {
