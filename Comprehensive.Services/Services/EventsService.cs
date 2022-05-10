@@ -66,5 +66,41 @@ namespace Comprehensive.Services.Services
                 throw e;
             }
         }
+
+        public async Task<List<EventsM>> GetAllByValidityAsync(bool binary)
+        {
+            try
+            {
+                return await _iUnitOfWork.EventsRepository.GetAllByValidity(binary);
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public async Task<List<EventsM>> GetAllByDateAsync(DateTime date)
+        {
+            try
+            {
+                return await _iUnitOfWork.EventsRepository.GetAllByDateAsync(date);
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public async Task<List<EventsM>> GetAllAsync()
+        {
+            try
+            {
+                return await _iUnitOfWork.EventsRepository.GetAllAsync();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
