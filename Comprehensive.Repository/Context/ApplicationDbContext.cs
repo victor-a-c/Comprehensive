@@ -18,6 +18,6 @@ namespace Comprehensive.Repository.Context
             _configuration = iConfiguration;
         }
 
-        public DbSet<EventsModel> EventsModel { get; set; }
+        public DbSet<EventsM> EventsModel { get; set; }
     }
 }

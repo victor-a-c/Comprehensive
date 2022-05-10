@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Comprehensive.Logs\Comprehensive.Logs.csproj" />
+    <ProjectReference Include="..\Comprehensive.Repository\Comprehensive.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

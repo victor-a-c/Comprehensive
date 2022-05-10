@@ -20,29 +20,29 @@ namespace Comprehensive.Repository.Repositories
             _db = db;
         }
 
-        public async Task<List<EventsModel>> GetAllAsync()
+        public async Task<List<EventsM>> GetAllAsync()
         {
             return await _db.EventsModel.ToListAsync();
         }
 
-        public async Task<List<EventsModel>> GetAllByDateAsync(DateTime date)
+        public async Task<List<EventsM>> GetAllByDateAsync(DateTime date)
         {
             return await _db.EventsModel.Where(x => x.Date == date).ToListAsync();
         }
 
-        public async Task<List<EventsModel>> GetAllByValidity(bool binary)
+        public async Task<List<EventsM>> GetAllByValidity(bool binary)
         {
             return await _db.EventsModel.Where(x => x.IsValid == binary).ToListAsync();
         }
 
-        public async Task<EventsModel> GetByIdAsync(long id)
+        public async Task<EventsM> GetByIdAsync(long id)
         {
             return await _db.EventsModel.SingleAsync(x => x.EventId == id);
         }
 
-        public async Task<EventsModel> CreateAsync(EventsModel model)
+        public async Task<EventsM> CreateAsync(EventsM model)
         {
-            var result = new EventsModel();
+            var result = new EventsM();
             result.EventId = model.EventId;
             result.EventName = model.EventName;
             result.Date = model.Date;
@@ -88,9 +88,9 @@ namespace Comprehensive.Repository.Repositories
             return model;
         }
 
-        public async Task<EventsModel> UpdateAsync(EventsModel model)
+        public async Task<EventsM> UpdateAsync(EventsM model)
         {
-            var result = new EventsModel();
+            var result = new EventsM();
             result.EventId = model.EventId;
             result.EventName = model.EventName;
             result.Date = model.Date;
@@ -136,7 +136,7 @@ namespace Comprehensive.Repository.Repositories
             return model;
         }
 
-        public async Task<EventsModel> DeleteByIdAsync(long id)
+        public async Task<EventsM> DeleteByIdAsync(long id)
         {
             var result = await _db.EventsModel.Include(c => c.EventId).SingleAsync(x => x.EventId == id);
             var error = true;
