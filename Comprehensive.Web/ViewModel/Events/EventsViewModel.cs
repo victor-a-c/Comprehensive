@@ -1,11 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Comprehensive.Web.ViewModel.Base;
+using System.ComponentModel.DataAnnotations;
 
 namespace Comprehensive.Web.ViewModel.Events
 {
-    public class EventsViewModel
+    public class EventsViewModel : BaseViewModel
     {
-        [Display(Name = "EventId")]
-        public long EventId { get; set; }
 
         [Display(Name = "EventName")]
         public string? EventName { get; set; }

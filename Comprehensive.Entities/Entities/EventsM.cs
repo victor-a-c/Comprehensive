@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Comprehensive.Entities.Entities
 {
+    [Table("EVENTS")]
     public class EventsM : BaseM
     {
         [Column("EventId")]
