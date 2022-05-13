@@ -10,9 +10,6 @@ namespace Comprehensive.Entities.Entities
     [Table("EVENTS")]
     public class EventsM : BaseM
     {
-        [Column("EventId")]
-        public long EventId { get; set; }
-
         [Column("EventName")]
         public string? EventName { get; set; }
 

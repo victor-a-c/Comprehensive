@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wcEwysrWXeS7wiN2K0spomd/U2ODPelyckflhYXlIOwIqRVop09VwcuKObenXppDH9zlQZEyhG6aPbWX+4qDCw==",
+  "dgSpecHash": "PKStwOYODjqGTDXyDReG2Sh9Ay0rpt0jc++OeSkCImmu7CNRG7km2IktcM1HO+PKhV8wJYqz9lhBHnMpruQcrw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vitor\\Documents\\GitHub\\Comprehensive\\Comprehensive.Services\\Comprehensive.Services.csproj",
   "expectedPackageFiles": [
@@ -17,8 +17,10 @@
     "C:\\Users\\vitor\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\vitor\\.nuget\\packages\\nlog\\4.7.15\\nlog.4.7.15.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\vitor\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
